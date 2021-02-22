@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: p-goetz/netlify-cms-sandbox
+  branch: main
 
 publish_mode: editorial_workflow
 media_folder: "static/img"
