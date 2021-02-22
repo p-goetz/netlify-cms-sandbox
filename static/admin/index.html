@@ -14,7 +14,7 @@
       label: "A",
       fields: [
         {name: 'content', label: 'Content', widget: 'string'}],
-      pattern: /{{< a >}}([\s\S]*?){{< \/a >}}/,
+      pattern: /^{{< a >}}([\s\S]*?){{< \/a >}}/,
       fromBlock: function(match) {
         return {
           content: match[1] ? match[1].trim() : ''
@@ -36,7 +36,7 @@
       label: "B",
       fields: [
         {name: 'content', label: 'Content', widget: 'string'}],
-      pattern: /{{< b >}}([\s\S]*?){{< \/b >}}/,
+      pattern: /^{{< b >}}([\s\S]*?){{< \/b >}}/,
       fromBlock: function(match) {
         return {
           content: match[1] ? match[1].trim() : ''
